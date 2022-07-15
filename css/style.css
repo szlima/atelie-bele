@@ -1,10 +1,56 @@
-div {
-  background-color: black;
-  color: white;
+* {
+  padding: 0;
+  margin: 0;
 }
-div h1 {
-  color: pink;
-  text-decoration: underline;
+
+body {
+  background-color: #121413;
+  color: #bbb7ab;
+  font-family: "Arima", cursive;
+  font-size: 20px;
+}
+body a {
+  color: #bbb7ab;
+  text-decoration: none;
+  transition: 0.7s;
+}
+body li {
+  list-style: none;
+}
+body h1 {
+  font-size: 250%;
+}
+body h1, body h2, body h3 {
+  color: #35bbbb;
+  margin-bottom: 1rem;
+}
+body .header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+}
+body .header h1 {
+  margin: 0;
+}
+body .header-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .header-nav ul li {
+  margin: 0 1rem;
+}
+body .header-nav ul li .active {
+  color: #dbb481;
+}
+body .header-nav ul li a:hover {
+  color: #35bbbb;
 }
 
 /*# sourceMappingURL=style.css.map */
