@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -51,6 +52,38 @@ body .header-nav ul li .active {
 }
 body .header-nav ul li a:hover {
   color: #35bbbb;
+}
+body .sobre {
+  background-color: #bbb7ab;
+  color: #121413;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+body .sobre-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .sobre-card {
+  width: 50%;
+}
+body .sobre-descricao h2 {
+  font-family: "Fredoka One", cursive;
+  font-size: 200%;
+  color: #017070;
+}
+body .sobre-foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .sobre-foto img {
+  height: 70vh;
 }
 
 /*# sourceMappingURL=style.css.map */
