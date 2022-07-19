@@ -96,7 +96,71 @@ body{
         }
     }
 
+    .portfolio{
+        @include mixins.container;
+        @include mixins.flex-center;
+        justify-content: space-around;
+        height: 100vh;
+
+        &-card{
+            @include mixins.flex-center;
+            flex-direction: column;
+            width: 350px;
+            height: 350px;
+
+            &-1, &-2{
+                align-items: end;                
+            }
+
+            &-1{
+                @include mixins.bg-img('croche.jpg');
+                @include mixins.bg-pb('croche.jpg'); 
+            }
+
+            &-2{
+                @include mixins.bg-img('trico.jpg');
+                @include mixins.bg-pb('trico.jpg'); 
+            }            
+
+            &-titulo{
+                padding: 0 1rem;
+                color: variaveis.$cor-escura-principal;
+                background-color: variaveis.$cor-clara-transparente;
+            }
+
+            &-btn{
+                border: 2px solid variaveis.$cor-escura-principal;
+                border-right: 0;
+                padding: .5rem 1rem;
+                width: 8rem;
+                text-align: center;
+
+                color: variaveis.$cor-escura-principal;
+                background-color: variaveis.$cor-clara-transparente;
+
+                &:hover{
+                    background-color: variaveis.$cor-escura-principal;
+                    color: variaveis.$cor-clara-principal;
+                }
+            }
+
+            &-texto{
+                background-color: variaveis.$cor-escura-secundaria;
+                height: 90%;
+                padding: 1rem 2rem;
+                text-align: start;
+                align-items: start;
+
+                h1{   
+                    padding: 0;                 
+                    color: variaveis.$cor-destaque-secundaria;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
 
 
+    
 
 }

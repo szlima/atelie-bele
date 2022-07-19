@@ -85,5 +85,86 @@ body .sobre-foto {
 body .sobre-foto img {
   height: 70vh;
 }
+body .portfolio {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+body .portfolio-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  height: 350px;
+}
+body .portfolio-card-1, body .portfolio-card-2 {
+  align-items: end;
+}
+body .portfolio-card-1 {
+  background-image: url("../img/croche.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.7s;
+  filter: grayscale(100%);
+}
+body .portfolio-card-1:hover {
+  background-size: 110%;
+}
+body .portfolio-card-1:hover {
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/croche.jpg");
+}
+body .portfolio-card-2 {
+  background-image: url("../img/trico.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.7s;
+  filter: grayscale(100%);
+}
+body .portfolio-card-2:hover {
+  background-size: 110%;
+}
+body .portfolio-card-2:hover {
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/trico.jpg");
+}
+body .portfolio-card-titulo {
+  padding: 0 1rem;
+  color: #121413;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+body .portfolio-card-btn {
+  border: 2px solid #121413;
+  border-right: 0;
+  padding: 0.5rem 1rem;
+  width: 8rem;
+  text-align: center;
+  color: #121413;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+body .portfolio-card-btn:hover {
+  background-color: #121413;
+  color: #bbb7ab;
+}
+body .portfolio-card-texto {
+  background-color: #191b1a;
+  height: 90%;
+  padding: 1rem 2rem;
+  text-align: start;
+  align-items: start;
+}
+body .portfolio-card-texto h1 {
+  padding: 0;
+  color: #017070;
+  background-color: transparent;
+}
 
 /*# sourceMappingURL=style.css.map */
