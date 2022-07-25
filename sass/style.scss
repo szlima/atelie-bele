@@ -160,7 +160,33 @@ body{
         }
     }
 
+    .servicos{
+        @include mixins.container;
+        @include mixins.flex-center;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        
+        &-card{          
+            width: 300px;
+            height: 300px;
+            margin: 1rem;
+            @include mixins.flex-center;
+            align-items: end;
 
+            &-titulo{
+                text-align: center;
+                padding: .1rem .5rem;      
+                background-color: variaveis.$cor-escura-transparente;             
+            }
+
+            @for $i from 1 through 8{
+                &-#{$i}{
+                    @include mixins.bg-img('produto#{$i}.jpg');
+                }
+            }
+        }
+    }
+        
     
 
 }
