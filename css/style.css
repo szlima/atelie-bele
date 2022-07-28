@@ -270,5 +270,32 @@ body .servicos-card-8 {
 body .servicos-card-8:hover {
   background-size: 110%;
 }
+body .contato {
+  background-color: #191b1a;
+  color: #bbb7ab;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+body .contato-redes {
+  margin: 1rem;
+}
+body .contato-redes a {
+  color: #35bbbb;
+  margin: 0 1rem;
+  font-size: 2.5rem;
+}
+body .contato-redes a:hover {
+  color: #017070;
+}
 
 /*# sourceMappingURL=style.css.map */
