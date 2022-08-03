@@ -214,5 +214,19 @@ body{
         }
     }
     
+    footer{
+        margin: 2rem 0;
+        text-align: center;
+        font-size: small;
+        color: variaveis.$cor-clara-secundaria;
+
+        a{
+            color: variaveis.$cor-clara-secundaria;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
 
 }

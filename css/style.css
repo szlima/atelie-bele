@@ -297,5 +297,17 @@ body .contato-redes a {
 body .contato-redes a:hover {
   color: #017070;
 }
+body footer {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: small;
+  color: #dbb481;
+}
+body footer a {
+  color: #dbb481;
+}
+body footer a:hover {
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=style.css.map */
