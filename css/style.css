@@ -21,6 +21,16 @@ body li {
 body h1 {
   font-size: 250%;
 }
+@media only screen and (max-width: 959px) {
+  body h1 {
+    font-size: 200%;
+  }
+}
+@media only screen and (max-width: 476px) {
+  body h1 {
+    font-size: 150%;
+  }
+}
 body h1, body h2, body h3 {
   color: #35bbbb;
   margin-bottom: 1rem;
@@ -34,6 +44,13 @@ body .header {
   align-items: center;
   justify-content: space-between;
   height: 15vh;
+}
+@media only screen and (max-width: 767px) {
+  body .header {
+    flex-direction: column;
+    justify-content: center;
+    height: 25vh;
+  }
 }
 body .header h1 {
   margin: 0;
@@ -61,6 +78,11 @@ body .sobre {
   align-items: center;
   height: 85vh;
 }
+@media only screen and (max-width: 767px) {
+  body .sobre {
+    height: auto;
+  }
+}
 body .sobre-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -69,8 +91,19 @@ body .sobre-container {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 767px) {
+  body .sobre-container {
+    flex-direction: column-reverse;
+  }
+}
 body .sobre-card {
   width: 50%;
+}
+@media only screen and (max-width: 767px) {
+  body .sobre-card {
+    width: 100%;
+    margin: 1rem;
+  }
 }
 body .sobre-descricao h2 {
   font-family: "Fredoka One", cursive;
@@ -85,6 +118,12 @@ body .sobre-foto {
 body .sobre-foto img {
   height: 70vh;
 }
+@media only screen and (max-width: 767px) {
+  body .sobre-foto img {
+    height: auto;
+    width: 100%;
+  }
+}
 body .portfolio {
   max-width: 1200px;
   margin: 0 auto;
@@ -95,6 +134,12 @@ body .portfolio {
   justify-content: space-around;
   height: 100vh;
 }
+@media only screen and (max-width: 767px) {
+  body .portfolio {
+    height: auto;
+    flex-direction: column;
+  }
+}
 body .portfolio-card {
   display: flex;
   justify-content: center;
@@ -102,6 +147,18 @@ body .portfolio-card {
   flex-direction: column;
   width: 350px;
   height: 350px;
+}
+@media only screen and (max-width: 767px) {
+  body .portfolio-card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+@media only screen and (max-width: 476px) {
+  body .portfolio-card {
+    height: auto;
+    margin: 0.2rem 0;
+  }
 }
 body .portfolio-card-1, body .portfolio-card-2 {
   align-items: end;
@@ -150,6 +207,11 @@ body .portfolio-card-btn {
   color: #121413;
   background-color: rgba(255, 255, 255, 0.5);
 }
+@media only screen and (max-width: 476px) {
+  body .portfolio-card-btn {
+    border-bottom: 0;
+  }
+}
 body .portfolio-card-btn:hover {
   background-color: #121413;
   color: #bbb7ab;
@@ -184,6 +246,17 @@ body .servicos-card {
   justify-content: center;
   align-items: center;
   align-items: end;
+}
+@media only screen and (max-width: 767px) {
+  body .servicos-card {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 476px) {
+  body .servicos-card {
+    height: auto;
+    margin: 0.5rem 0;
+  }
 }
 body .servicos-card-titulo {
   text-align: center;
@@ -293,6 +366,11 @@ body .contato-redes a {
   color: #35bbbb;
   margin: 0 1rem;
   font-size: 2.5rem;
+}
+@media only screen and (max-width: 476px) {
+  body .contato-redes a {
+    font-size: 2rem;
+  }
 }
 body .contato-redes a:hover {
   color: #017070;

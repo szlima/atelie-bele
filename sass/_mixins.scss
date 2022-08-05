@@ -32,3 +32,22 @@
         background-image: linear-gradient(variaveis.$cor-clara-transparente, variaveis.$cor-clara-transparente), url('../img/#{$arq}');
     }
 }
+
+
+@mixin media-tam-grd{
+    @media only screen and (max-width: 959px){
+        @content;
+    }
+}
+
+@mixin media-tam-med{
+    @media only screen and (max-width: 767px){
+        @content;
+    }
+}
+
+@mixin media-tam-pqn{
+    @media only screen and (max-width: 476px){
+        @content;
+    }
+}
